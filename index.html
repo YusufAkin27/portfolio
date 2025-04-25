@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf Akın | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>YA</text></svg>">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#home"><span>Y</span>usuf<span>A</span>kın</a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+                    <li><a href="#about" class="nav-link">Hakkımda</a></li>
+                    <li><a href="#skills" class="nav-link">Yetenekler</a></li>
+                    <li><a href="#projects" class="nav-link">Projeler</a></li>
+                    <li><a href="#contact" class="nav-link">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Merhaba, Ben <span class="gradient-text">Yusuf Akın</span></h1>
+                    <p>Bilgisayar Mühendisliği Öğrencisi - Bingöl Üniversitesi</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Projelerimi Gör</a>
+                        <a href="#contact" class="btn btn-secondary">İletişime Geç</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-img">
+                        <img src="images/profile/profil.jpg" alt="Yusuf Akın" class="blur-effect">
+                    </div>
+                    <div class="floating-element" data-speed="2"></div>
+                    <div class="floating-element" data-speed="-2"></div>
+                    <div class="floating-element" data-speed="1.5"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hakkımda</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <span class="about-initials">YA</span>
+                    </div>
+                    <div class="box-decoration top-left"></div>
+                    <div class="box-decoration bottom-right"></div>
+                </div>
+                <div class="about-text">
+                    <h3 class="gradient-text">Bilgisayar Mühendisliği Öğrencisi</h3>
+                    <p>Bingöl Üniversitesi'nde bilgisayar mühendisliği okuyorum. Yazılım geliştirme konusunda tutkulu birisiyim ve sürekli olarak kendimi geliştirmeye çalışıyorum. Web geliştirme, mobil uygulama geliştirme ve masaüstü uygulama geliştirme alanlarında çeşitli projeler üzerinde çalışıyorum.</p>
+                    <p>Yenilikçi teknolojileri yakından takip ederek, kullanıcı dostu ve etkileyici uygulamalar geliştirmeyi hedefliyorum. Java, React ve Flutter gibi modern teknolojileri kullanarak geliştirdiğim projelerle kullanıcıların hayatını kolaylaştıracak çözümler sunmaya çalışıyorum. Özellikle eğitim ve finansal teknolojiler alanında yaptığım çalışmalarla, toplumsal fayda sağlayan uygulamalar geliştirmeye odaklanıyorum.</p>
+                    <p>Takım çalışmasına yatkın, problem çözme becerileri gelişmiş ve yeni teknolojileri hızla öğrenebilen bir geliştiriciyim. Yazılım geliştirme süreçlerinde temiz kod prensiplerine önem veriyor, sürdürülebilir ve ölçeklenebilir uygulamalar oluşturmayı amaçlıyorum.</p>
+                    
+                    <div class="about-cards">
+                        <div class="about-card">
+                            <h4>Eğitim</h4>
+                            <p>Bingöl Üniversitesi, Bilgisayar Mühendisliği</p>
+                        </div>
+                        <div class="about-card">
+                            <h4>İlgi Alanları</h4>
+                            <p>Web Geliştirme, Mobil, Yapay Zeka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Yeteneklerim</h2>
+                <div class="underline"></div>
+                <p class="section-desc">Yazılım geliştirme yolculuğumda edindiğim beceriler</p>
+            </div>
+            <div class="skills-filters">
+                <button class="skill-filter active" data-filter="all">Tümü</button>
+                <button class="skill-filter" data-filter="frontend">Frontend</button>
+                <button class="skill-filter" data-filter="backend">Backend</button>
+                <button class="skill-filter" data-filter="other">Diğer</button>
+            </div>
+            <div class="skills-container">
+              
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-info">
+                        <span>Seviye</span>
+                        <span>75%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">📱</div>
+                    <h3>Flutter</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-info">
+                        <span>Seviye</span>
+                        <span>45%</span>
+                    </div>
+                </div>
+                
+             
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">☕</div>
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <div class="skill-info">
+                        <span>Seviye</span>
+                        <span>70%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">🪶</div>
+                    <h3>Spring Boot</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <div class="skill-info">
+                        <span>Seviye</span>
+                        <span>70%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">🟢</div>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-info">
+                        <span>Seviye</span>
+                        <span>75%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">📊</div>
+                    <h3>SQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <div class="skill-info">
+                        <span>Seviye</span>
+                        <span>70%</span>
+                    </div>
+                </div>
+               
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">🔥</div>
+                    <h3>Firebase</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-info">
+                        <span>Seviye</span>
+                        <span>75%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">#</div>
+                    <h3>C#</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 65%"></div>
+                    </div>
+                    <div class="skill-info">
+                        <span>Seviye</span>
+                        <span>65%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">🌐</div>
+                    <h3>.NET</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                    <div class="skill-info">
+                        <span>Seviye</span>
+                        <span>60%</span>
+                    </div>
+                </div>
+                
+                <!-- Other Skills -->
+                <div class="skill-card" data-category="other">
+                    <div class="skill-icon">📝</div>
+                    <h3>Git</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-info">
+                        <span>Seviye</span>
+                        <span>75%</span>
+                    </div>
+                </div>
+                
+                </div>
+           
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projelerim</h2>
+                <div class="underline"></div>
+                <p class="section-desc">Kişisel ve profesyonel olarak geliştirdiğim projeler</p>
+            </div>
+            
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="web">Web Geliştirme</button>
+                <button class="filter-btn" data-filter="mobile">Mobil Uygulama</button>
+                <button class="filter-btn" data-filter="desktop">Masaüstü Uygulama</button>
+            </div>
+            
+            <div class="all-projects">
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="images/projects/e-ticaret/cover.jpg" alt="OrderPayment E-Ticaret Platformu" class="project-cover-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>OrderPayment E-Ticaret Platformu</h3>
+                        <p>Güvenli ödeme sistemi ve SMS bildirimleriyle donatılmış modern bir e-ticaret platformu. ASP.NET MVC, Iyzipay ödeme entegrasyonu ve Twilio SMS servisi kullanılarak geliştirilmiştir.</p>
+                        <div class="project-tags">
+                            <span>.NET</span>
+                            <span>C#</span>
+                            <span>MVC</span>
+                            <span>Iyzipay</span>
+                            <span>Twilio</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/e-ticaret-platformu.html" class="project-link demo">Detaylar</a>
+                            <a href="https://github.com/YusufAkin27/OrderPayment" class="project-link github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="images/projects/norma-bank/dashboard.jpg" alt="NORMA Bank Application" class="project-cover-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>NORMA Bank Application</h3>
+                        <p>Modern ve güvenli bir online bankacılık sistemi. Müşteri yönetimi, hesap yönetimi, kart yönetimi ve transfer işlemleri gibi temel bankacılık hizmetlerini içeren kapsamlı bir full-stack uygulaması.</p>
+                        <div class="project-tags">
+                            <span>Java 17</span>
+                            <span>Spring Boot</span>
+                            <span>React</span>
+                            <span>PostgreSQL</span>
+                            <span>Redux</span>
+                            <span>Axios</span>
+                            <span>JWT</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/norma-bank.html" class="project-link demo">Detaylar</a>
+                            <a href="https://github.com/YusufAkin27/Bank-Application" class="project-link github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="images/projects/language-learner/dashboard.jpg" alt="LanguageLearner Chrome Extension" class="project-cover-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>LanguageLearner Chrome Extension</h3>
+                        <p>Netflix ve YouTube'da altyazıları analiz ederek dil öğrenimini kolaylaştırmak için geliştirilmiş bir Chrome uzantısı. Çift altyazı desteği, kelime çevirisi ve öğrenme takibi özellikleri sunar.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Chrome API</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Translation API</span>
+                            <span>Web Speech API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/language-learner.html" class="project-link demo">Detaylar</a>
+                            <a href="https://github.com/YusufAkin27/chrome-extensions-Language-learner" class="project-link github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-img">
+                        <img src="images/projects/campus-social/anasayfa.jpg" alt="Campus Social" class="project-cover-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Campus Social</h3>
+                        <p>Flutter ile geliştirilmiş modern bir sosyal medya uygulaması. Gönderi paylaşımı, hikayelerin, gerçek zamanlı mesajlaşma ve kişiselleştirilebilir profiller gibi özelliklerle kampüs topluluğu için tasarlanmıştır.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                            <span>WebSockets</span>
+                            <span>Provider</span>
+                            <span>SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/campus-social.html" class="project-link demo">Detaylar</a>
+                            <a href="https://github.com/YusufAkin27/social_media" class="project-link github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="desktop">
+                    <div class="project-img">
+                        <img src="images/projects/enapp/images.jpeg" alt="EnApp - İngilizce Öğrenme Platformu" class="project-cover-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>EnApp - İngilizce Öğrenme Platformu</h3>
+                        <p>Java Swing ile geliştirilmiş interaktif İngilizce öğrenme uygulaması. Harf yerleştirme, kelime bulma ve kelime tahmin oyunları, seviye belirleme quizleri ve kelime yönetim sistemi içeren kapsamlı bir eğitim platformu.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Swing</span>
+                            <span>JDBC</span>
+                            <span>MySQL</span>
+                            <span>OOP</span>
+                            <span>MVC</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/enapp.html" class="project-link demo">Detaylar</a>
+                            <a href="https://github.com/YusufAkin27/EnApp" class="project-link github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>İletişime Geç</h2>
+                <div class="underline"></div>
+                <p class="section-desc">Projeleriniz veya iş birliği teklifleriniz için benimle iletişime geçebilirsiniz</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="gradient-text">İletişim Bilgileri</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:ysufakn63@gmail.com">ysufakn63@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefon</h4>
+                            <a href="tel:+905336360079">0533 636 0079</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Konum</h4>
+                            <p>Bingöl Merkez, Türkiye</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Sosyal Medya</h4>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/y.aakin/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/YusufAkin27" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/yusuf-akin-25224b270/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3 class="gradient-text">Bana Mesaj Gönder</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Adınız</label>
+                            <input type="text" id="name" name="name" required placeholder="Adınız Soyadınız">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Adresiniz</label>
+                            <input type="email" id="email" name="email" required placeholder="ornek@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Mesajınızı buraya yazın..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Mesaj Gönder</button>
+                    </form>
+                    <div id="formSuccess" class="form-success">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağım.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home"><span>Y</span>usuf<span>A</span>kın</a>
+                </div>
+                <p class="footer-text">&copy; <span id="currentYear"></span> Yusuf Akın. Tüm hakları saklıdır.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/y.aakin/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/YusufAkin27" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yusuf-akin-25224b270/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Project filtering
+        document.addEventListener('DOMContentLoaded', () => {
+            // Make sure about section is visible
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+                aboutSection.style.display = 'block';
+                aboutSection.style.opacity = '1';
+                aboutSection.style.visibility = 'visible';
+            }
+            
+            const aboutContent = document.querySelector('.about-content');
+            if (aboutContent) {
+                aboutContent.style.display = 'flex';
+                aboutContent.style.opacity = '1';
+                aboutContent.style.visibility = 'visible';
+                aboutContent.style.transform = 'translateY(0)';
+            }
+            
+            // Set up direct link to About section
+            const aboutLink = document.querySelector('a[href="#about"]');
+            if (aboutLink) {
+                aboutLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Make sure About section is visible
+                    if (aboutSection) {
+                        aboutSection.style.display = 'block';
+                        aboutSection.style.opacity = '1';
+                        aboutSection.style.visibility = 'visible';
+                        
+                        // Scroll to it
+                        aboutSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            }
+            
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            // Ensure all projects are visible by default
+            projectCards.forEach(card => {
+                card.style.display = 'block';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            });
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = button.getAttribute('data-filter');
+                    
+                    // Filter projects
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category').includes(filterValue)) {
+                            card.style.display = 'block';
+                            
+                            // Add animation
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Add initial styling to cards for animation
+            projectCards.forEach(card => {
+                card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            });
+        });
+    </script>
+</body>
+</html> 
