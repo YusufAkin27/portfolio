@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yusuf Akin — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="gradient-orb gradient-orb--1" aria-hidden="true"></div>
+  <div class="gradient-orb gradient-orb--2" aria-hidden="true"></div>
+
+  <header class="header">
+    <a href="#" class="logo">Yusuf<span class="logo-accent">.</span></a>
+    <nav class="nav">
+      <a href="#work">Projeler</a>
+      <a href="#about">Hakkımda</a>
+      <a href="#contact">İletişim</a>
+    </nav>
+    <button type="button" class="btn-refresh" id="btnRefresh" title="Portfolyoyu güncelle">
+      <span class="btn-refresh-icon"></span>
+      <span>Güncelle</span>
+    </button>
+    <button type="button" class="burger" id="burger" aria-label="Menüyü aç" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-mobile" id="navMobile" aria-hidden="true">
+      <a href="#work">Projeler</a>
+      <a href="#about">Hakkımda</a>
+      <a href="#contact">İletişim</a>
+      <button type="button" class="nav-mobile-refresh" id="btnRefreshMobile">
+        <span class="btn-refresh-icon"></span>
+        Güncelle
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-label">Merhaba, ben</p>
+          <h1 class="hero-title">
+            <span class="hero-title-line">Yusuf</span>
+            <span class="hero-title-line hero-title-line--accent">Akin</span>
+          </h1>
+          <p class="hero-desc">Backend & mobil odaklı yazılım geliştirici · Java, Spring Boot, Android ile ölçeklenebilir sistemler kuruyorum</p>
+          <div class="hero-cta">
+            <a href="#work" class="btn btn-primary">Projelere göz at</a>
+            <a href="#contact" class="btn btn-ghost">İletişime geç</a>
+          </div>
+          <div class="hero-social" id="heroSocial">
+            <a href="#" data-link="github" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">GitHub</a>
+            <a href="#" data-link="linkedin" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" data-link="instagram" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">Instagram</a>
+            <a href="#" data-link="email" class="social-link" aria-label="E-posta">E-posta</a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <img src="/public/profile.JPEG" alt="Yusuf Akin" class="hero-photo" width="280" height="280" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--work" id="work">
+      <div class="section-head">
+        <span class="section-label">Çalışmalar</span>
+        <h2 class="section-title">Projeler</h2>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <div class="projects-loading" id="projectsLoading">
+          <div class="loader"></div>
+          <p>Projeler yükleniyor…</p>
+        </div>
+        <div class="projects-error hidden" id="projectsError">
+          <p id="projectsErrorText">Projeler yüklenemedi.</p>
+          <button type="button" class="btn btn-ghost" id="retryProjects">Tekrar dene</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--about" id="about">
+      <div class="section-head">
+        <span class="section-label">Hakkımda</span>
+        <h2 class="section-title">Kısaca</h2>
+      </div>
+      <div class="about-content">
+        <p class="about-text">
+          23 yaşındayım, Bingöl Üniversitesi Bilgisayar Mühendisliği mezunuyum. Backend ve mobil tarafta kendimi geliştiriyorum; ölçeklenebilir sistemler, modern backend teknolojileri ve yazılım mimarisi konularına ilgi duyuyorum.
+        </p>
+        <p class="about-text">
+          <a href="https://www.aybilgen.com.tr/" target="_blank" rel="noopener" class="link-external">Aybilgen Teknoloji A.Ş.</a>'nde staj yaptım; ardından <strong>freelancer</strong> olarak projeler üzerinde çalıştım. Aşağıda GitHub projelerimi inceleyebilir, detay için herhangi bir karta tıklayarak README ve repo bilgilerine ulaşabilirsiniz.
+        </p>
+        <h3 class="about-subtitle">Yetenekler & Araçlar</h3>
+        <p class="about-skills-note">GitHub projelerimden türetilen yetenekler aşağıda gösterilir.</p>
+        <div class="skills-tags" id="skillsTags">
+          <!-- JS ile GitHub projelerinden doldurulur -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <div class="section-head">
+        <span class="section-label">İletişim</span>
+        <h2 class="section-title">Birlikte çalışalım</h2>
+      </div>
+      <div class="contact-links" id="contactLinks">
+        <a href="#" data-link="github" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-card-icon">GH</span>
+          <span class="contact-card-label">GitHub</span>
+        </a>
+        <a href="#" data-link="linkedin" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-card-icon">IN</span>
+          <span class="contact-card-label">LinkedIn</span>
+        </a>
+        <a href="#" data-link="instagram" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-card-icon">IG</span>
+          <span class="contact-card-label">Instagram</span>
+        </a>
+        <a href="#" data-link="email" class="contact-card">
+          <span class="contact-card-icon">@</span>
+          <span class="contact-card-label">E-posta</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="currentYear"></span> Yusuf Akin. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <!-- Proje detay modal -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Kapat"></button>
+      <div class="modal-content">
+        <header class="modal-header">
+          <h2 id="modalTitle" class="modal-title"></h2>
+          <p class="modal-meta" id="modalMeta"></p>
+          <div class="modal-links" id="modalLinks"></div>
+        </header>
+        <div class="modal-body">
+          <div class="modal-readme" id="modalReadme"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
